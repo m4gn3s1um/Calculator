@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXListView?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.CalculatorController">
+   <children>
+      <MFXButton fx:id="but1" layoutX="111.0" layoutY="265.0" onAction="#add1" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="1" wrapText="true" />
+      <MFXButton fx:id="but4" layoutX="111.0" layoutY="307.0" onAction="#add4" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="4" wrapText="true" />
+      <MFXButton fx:id="but7" layoutX="111.0" layoutY="349.0" onAction="#add7" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="7" wrapText="true" />
+      <MFXButton fx:id="but2" layoutX="158.0" layoutY="265.0" onAction="#add2" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="2" wrapText="true" />
+      <MFXButton fx:id="but5" layoutX="158.0" layoutY="307.0" onAction="#add5" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="5" wrapText="true" />
+      <MFXButton fx:id="but8" layoutX="158.0" layoutY="349.0" onAction="#add8" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="8" wrapText="true" />
+      <MFXButton fx:id="but3" layoutX="206.0" layoutY="265.0" onAction="#add3" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="3" wrapText="true" />
+      <MFXButton fx:id="but6" layoutX="206.0" layoutY="307.0" onAction="#add6" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="6" wrapText="true" />
+      <MFXButton fx:id="but9" layoutX="206.0" layoutY="349.0" onAction="#add9" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="9" wrapText="true" />
+      <MFXButton fx:id="butDelete" layoutX="253.0" layoutY="265.0" onAction="#deleteNr" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="DELETE" wrapText="true" />
+      <MFXButton fx:id="butMinus" layoutX="253.0" layoutY="307.0" onAction="#addMinus" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="-" wrapText="true" />
+      <MFXButton fx:id="butPlus" layoutX="253.0" layoutY="349.0" onAction="#addPlus" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="+" wrapText="true" />
+      <MFXButton fx:id="but0" layoutX="158.0" layoutY="391.0" onAction="#add0" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="0" wrapText="true" />
+      <MFXButton fx:id="butMultiply" layoutX="253.0" layoutY="391.0" onAction="#addMult" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="*" wrapText="true" />
+      <MFXButton fx:id="butDivide" layoutX="206.0" layoutY="391.0" onAction="#addDivide" prefHeight="36.0" prefWidth="41.0" style="-fx-border-style: solid;" text="/" wrapText="true" />
+      <MFXButton fx:id="butGetResult" layoutX="300.0" layoutY="265.0" onAction="#getResult" prefHeight="36.0" prefWidth="78.0" style="-fx-border-style: solid;" text="=" wrapText="true" />
+      <MFXListView fx:id="resultList" layoutX="378.0" layoutY="343.0" prefHeight="200.0" prefWidth="193.0" />
+      <Label alignment="CENTER" layoutX="423.0" layoutY="317.0" prefHeight="17.0" prefWidth="113.0" text="PREVIOUS RESULTS" />
+      <MFXTextField fx:id="numberTrack" alignment="CENTER_RIGHT" editable="false" layoutX="112.0" layoutY="193.0" prefHeight="48.0" prefWidth="265.0" selectable="false" />
+   </children>
+</Pane>
